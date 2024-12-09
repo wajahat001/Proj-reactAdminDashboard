@@ -88,7 +88,7 @@ const Calendar = () => {
               dayGridPlugin,
               timeGridPlugin,
               interactionPlugin,
-              listPlugin
+              listPlugin,
             ]}
             headerToolbar={{
               left: "prev,next today",
@@ -104,8 +104,8 @@ const Calendar = () => {
             eventClick={handleEvenTClick}
             eventsSet={(events) => setCurrentEvents(events)}
             initialEvents={[
-                {id: "1234", title: "All day Event", date: "2024-11-28" },
-                {id: "4321", title: "Timed Event", date: "2024-11-29" },
+              { id: "1234", title: "All day Event", date: "2024-11-28" },
+              { id: "4321", title: "Timed Event", date: "2024-11-29" },
             ]}
           />
         </Box>
