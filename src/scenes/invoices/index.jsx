@@ -1,9 +1,8 @@
-import { Box, Typography , useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import { mockDataInvoices } from "../../data/mockData";
 import Header from "../../components/Header";
-
 
 const Invoices = () => {
   const theme = useTheme();
@@ -30,11 +29,11 @@ const Invoices = () => {
       field: "cost",
       headerName: "Cost",
       flex: 1,
-      renderCell : (params )=>{
+      renderCell: (params) => {
         <Typography color={colors.greenAccent[500]}>
           ${params.row.cost}
-        </Typography>
-      }
+        </Typography>;
+      },
     },
     {
       field: "date",
@@ -45,10 +44,7 @@ const Invoices = () => {
 
   return (
     <Box m="20px">
-      <Header
-        title="INVOICES"
-        subtitle="List of invoice balances"
-      />
+      <Header title="INVOICES" subtitle="List of invoice balances" />
       <Box
         m="40px 0 0 0"
         height="75vh"
@@ -73,18 +69,12 @@ const Invoices = () => {
             borderTop: "none",
             backgroundColor: colors.blueAccent[700],
           },
-          "& .MuiCheckbox-root":{
-            color: `${colors.greenAccent[200]} !important`
-          
-          }
+          "& .MuiCheckbox-root": {
+            color: `${colors.greenAccent[200]} !important`,
+          },
         }}
       >
-        <DataGrid
-          checkboxSelection
-          rows={mockDataInvoices}
-          columns={columns}
-          
-        />
+        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns} />
       </Box>
     </Box>
   );
