@@ -57,11 +57,9 @@ const Sidebar = () => {
         "& .pro-menu-item.active": {
           color: "#6870fa !important",
         },
-        height:"160%"
+        height: "160%",
       }}
     >
-   
-    
       <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
           <MenuItem
@@ -121,10 +119,10 @@ const Sidebar = () => {
               selected={selected}
               setSelected={Setselected}
             />
-            <Typography 
-            variant="h6"
-            color= {colors.grey[300]}
-            sx={{ m:"15px 0px 5px 20px" }}
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0px 5px 20px" }}
             >
               Data
             </Typography>
@@ -149,10 +147,10 @@ const Sidebar = () => {
               selected={selected}
               setSelected={Setselected}
             />
-             <Typography 
-            variant="h6"
-            color= {colors.grey[300]}
-            sx={{ m:"15px 0px 5px 20px" }}
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0px 5px 20px" }}
             >
               Pages
             </Typography>
@@ -177,10 +175,10 @@ const Sidebar = () => {
               selected={selected}
               setSelected={Setselected}
             />
-             <Typography 
-            variant="h6"
-            color= {colors.grey[300]}
-            sx={{ m:"15px 0px 5px 20px" }}
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0px 5px 20px" }}
             >
               Charts
             </Typography>
